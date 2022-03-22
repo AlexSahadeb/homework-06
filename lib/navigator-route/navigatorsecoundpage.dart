@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/googlefontpage.dart';
 
 class NavigattorSecoundPage extends StatelessWidget {
   const NavigattorSecoundPage({Key? key}) : super(key: key);
@@ -20,6 +21,16 @@ class NavigattorSecoundPage extends StatelessWidget {
                   Navigator.pop(context);
                 },
                 child: Text("Back to NavigatorFristPage")),
+          ),
+          Center(
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => GoogleFontsPage()));
+                },
+                child: Text("Go to GoogleFontPage")),
           )
         ],
       )),

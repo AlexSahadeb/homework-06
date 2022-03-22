@@ -2,10 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_app/googlefontpage.dart';
-
 import 'package:flutter_app/input-validation/fristpage.dart';
-import 'package:flutter_app/navigator-route/navigatorfristpage.dart';
-import 'package:flutter_app/navigator-route/navigatorsecoundpage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,7 +42,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     Timer(Duration(seconds: 2), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (context) => GoogleFontsPage()));
+          context, MaterialPageRoute(builder: (context) => HomePage()));
     });
   }
 
